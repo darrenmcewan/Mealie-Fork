@@ -1,0 +1,256 @@
+.v-application {
+  --mealie-font: "Plus Jakarta Sans", "Helvetica Neue", sans-serif;
+  --mealie-display-font: "Lora", Georgia, serif;
+  --mealie-border: rgba(var(--v-theme-on-surface), 0.12);
+  --mealie-muted: rgb(var(--v-theme-on-surface-variant));
+  --mealie-motion-fast: 120ms;
+  --mealie-motion-standard: 200ms;
+  --mealie-motion-enter: 260ms;
+  --mealie-ease-out: cubic-bezier(0.2, 0.75, 0.25, 1);
+  --mealie-ease-in: cubic-bezier(0.55, 0, 0.8, 0.4);
+  font-family: var(--mealie-font);
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(rgba(var(--v-theme-on-surface), 0.025) 0.5px, transparent 0.5px);
+  background-size: 8px 8px;
+}
+
+.v-application
+  :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    .text-h1,
+    .text-h2,
+    .text-h3,
+    .text-h4,
+    .text-h5,
+    .text-h6,
+    .text-subtitle-1,
+    .text-subtitle-2,
+    .text-body-1,
+    .text-body-2,
+    .text-caption,
+    .v-btn,
+    .v-card-title,
+    .v-toolbar-title
+  ) {
+  font-family: var(--mealie-font) !important;
+  letter-spacing: 0 !important;
+}
+
+.v-application :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+.v-application .v-main > .v-container {
+  padding-block: 32px;
+}
+
+.v-application .v-card {
+  border: 1px solid var(--mealie-border);
+  border-radius: 8px;
+}
+
+.v-application .v-card-title {
+  font-weight: 650;
+  line-height: 1.5;
+  white-space: normal;
+}
+
+.v-application .v-btn {
+  font-weight: 600;
+  text-transform: none;
+  transition:
+    background-color var(--mealie-motion-fast) ease-out,
+    box-shadow var(--mealie-motion-standard) ease-out,
+    transform var(--mealie-motion-fast) ease-out;
+}
+
+.v-application .v-btn:not(.v-btn--disabled):active {
+  transform: scale(0.98);
+}
+
+.v-application .v-btn--icon.v-btn--density-default {
+  width: 44px;
+  height: 44px;
+}
+
+.v-application :is(a, button, [tabindex], select):focus-visible {
+  outline: 2px solid rgb(var(--v-theme-primary));
+  outline-offset: 3px;
+}
+
+.v-application .v-field:has(:is(input, textarea):focus-visible) {
+  outline: 2px solid rgb(var(--v-theme-primary));
+  outline-offset: 2px;
+}
+
+.v-application .v-field {
+  border-radius: 8px;
+  font-size: 0.9375rem;
+}
+
+.v-application .v-field--variant-outlined .v-field__outline {
+  --v-field-border-opacity: 0.25;
+}
+
+.v-application .v-list-item-title {
+  font-size: 0.875rem;
+  font-weight: 550;
+}
+
+.v-application .v-chip {
+  font-weight: 550;
+  letter-spacing: 0;
+}
+
+.v-application .v-table {
+  border-radius: 8px;
+}
+
+.v-application .v-table th {
+  color: var(--mealie-muted);
+  font-size: 0.75rem;
+  font-weight: 650 !important;
+}
+
+.v-overlay--active .v-overlay__scrim {
+  opacity: 0.5;
+}
+
+.v-dialog > .v-overlay__content > .v-card {
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 18%);
+}
+
+.v-dialog .v-card-title {
+  padding: 24px 24px 12px;
+}
+
+.v-dialog .v-card-actions {
+  padding: 16px 24px 24px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.v-overlay .v-btn {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.v-menu > .v-overlay__content {
+  border: 1px solid rgba(var(--v-theme-on-surface), 0.12);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 12%);
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 200ms ease-out;
+}
+
+.layout-leave-active {
+  transition-timing-function: ease-in;
+}
+
+.layout-enter-from,
+.layout-leave-to {
+  opacity: 0;
+}
+
+.narrow-container {
+  max-width: 800px !important;
+}
+
+.md-container {
+  max-width: 950px !important;
+}
+
+.theme--dark.v-application {
+  background-color: rgb(var(--v-theme-background, 30, 30, 30)) !important;
+}
+
+.theme--dark.v-navigation-drawer {
+  background-color: rgb(var(--v-theme-background, 30, 30, 30)) !important;
+}
+
+.theme--dark.v-card {
+  background-color: #1e1e1e !important;
+}
+
+.left-border {
+  border-left: 5px solid rgb(var(--v-theme-primary)) !important;
+}
+
+.left-warning-border {
+  border-left: 5px solid rgb(var(--v-theme-warning)) !important;
+}
+
+.handle {
+  cursor: grab !important;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.v-card__text,
+.v-card__title {
+  word-break: normal !important;
+}
+
+.text-hide-overflow {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+a {
+  color: rgb(var(--v-theme-primary));
+}
+
+.fill-height {
+  min-height: 100vh;
+}
+
+.vue-simple-handler {
+  background-color: rgb(var(--v-theme-primary)) !important;
+}
+
+@media (max-width: 599px) {
+  .v-application .v-main > .v-container {
+    padding: 20px 16px;
+  }
+
+  .v-dialog .v-card-title {
+    padding-inline: 16px;
+  }
+
+  .v-dialog .v-card-actions {
+    padding-inline: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .v-application .v-btn:active {
+    transform: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}

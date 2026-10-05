@@ -1,0 +1,33 @@
+## 1. Deterministic Route And Section Logic
+
+- [x] 1.1 Add colocated Vitest fixtures in `frontend/composables/shopping-list-page/sub-composables/use-shopping-list-sorting.test.ts` for the section and suggestion contracts; verify they expose the current numeric-name, duplicate-name, missing-setting, and draft-mutation gaps before the corresponding implementation changes.
+- [x] 1.2 Define the local ordered section type and implement a pure ID-based section builder in `use-shopping-list-sorting.ts`; verify tests cover numeric saved positions, ID tie-breaks, No Label first, unmatched/unresolved labels, omitted empty sections, checked-item exclusion, unchanged input, and every unchecked item exactly once.
+- [x] 1.3 Add the pure suggestion helper in `use-shopping-list-sorting.ts` with the catalogue and rank table from `design.md`; verify frozen-input tests cover all English seed names, whitespace/case normalization, exact-not-substring matching, custom/non-English fallback stability, preserved IDs, stable family ordering, and idempotence.
+
+## 2. Adopt Identity-Based Sections
+
+- [x] 2.1 Update `use-shopping-list-page.ts` and `frontend/pages/shopping-lists/[id].vue` to consume ordered sections and address item moves by stable section keys; verify the shopping view follows saved positions and moving items within one of two equal-named sections does not affect the other or change existing item-order preservation behavior.
+- [x] 2.2 Update `use-shopping-list-labels.ts` color and open-state handling to use section/label identity rather than names; verify renaming a label or using duplicate display names retains independent section colors and state.
+- [x] 2.3 Update `use-shopping-list-copy.ts` to iterate the section array and add colocated copy tests; verify plain and Markdown output follows the visible route, preserves repeated headings as separate sections, includes unlabeled/unmatched items once, and omits checked items.
+
+## 3. Isolated Draft And Safe Persistence
+
+- [x] 3.1 Replace shared-reference label editing in `use-shopping-list-crud.ts` with copied records, ordered-ID dirty detection, and draft-only manual/suggested moves; verify colocated CRUD tests prove saved positions remain unchanged before Save, Cancel discards edits, reopening restores saved order, and reversing moves restores the unchanged state.
+- [x] 3.2 Balance the route editor's polling-pause contribution and each save attempt's loading contribution with one idempotent close/unmount finalizer and `finally` cleanup; verify tests for Cancel, Escape-equivalent dismissal, success, empty response, thrown failure, repeated close events, and unmount return the counter to its original baseline and permit refresh.
+- [x] 3.3 Implement guarded saving through `ShoppingListsApi.updateLabelSettings`, assigning contiguous positions and adopting only confirmed server settings; verify mocked API tests assert the current list/setting IDs, no item update calls, server-authoritative success, failure retaining draft and saved state, retry, and offline/unchanged/pending saves sending no request.
+- [x] 3.4 Wire the page's existing `BaseDialog` with `keepOpen`, loading/error state, custom guarded actions, disabled bubbled Enter submission, and a route-local close guard; verify an unsuccessful request leaves the editor open, a pending request rejects all dismissal paths, and success closes once before refreshed server labels/items are reconciled.
+
+## 4. Practical Accessible Editor
+
+- [x] 4.1 Add a visible compact aisle-order command while retaining the existing menu action, and show all configured labels plus the no-label-configured empty state in the editor; verify both entry points open the same saved sequence, inactive labels are orderable, and an empty configuration offers label management with suggestion/save unavailable.
+- [x] 4.2 Extend `frontend/components/Domain/ShoppingList/MultiPurposeLabelSection.vue` with existing-registry up/down icons, 44px targets, boundary disabling, section-specific accessible names, and move events while preserving drag handles; verify keyboard and touch moves have the same result as dragging and long names fit at narrow mobile widths.
+- [x] 4.3 Add explicit Suggest Order, stable focus after movement, and a localized polite position announcement; verify a suggestion changes only the draft, manual overrides can place any section anywhere, focus remains on the moved section even at a boundary, and arrow activation does not submit Save.
+- [x] 4.4 Add the route editor's names, status/error feedback, and announcements to `frontend/lang/messages/en-US.json` using the existing Crowdin/fallback conventions; verify valid JSON and no raw translation keys appear in English or an untranslated UI locale, without bulk locale regeneration.
+
+## 5. Compatibility And Delivery Checks
+
+- [x] 5.1 Run the focused sorting, CRUD, and copy test files from `frontend/` with `./node_modules/.bin/vitest run <test-paths>` and run `./node_modules/.bin/eslint <touched-ts-and-vue-paths> --max-warnings=0`; verify all touched-slice tests and lint pass without altering unrelated working-tree changes.
+- [x] 5.2 Run the existing backend module `tests/integration_tests/user_household_tests/test_shopping_list_labels.py` through the repository's pytest environment; verify label creation/deletion, per-list label position updates, and sorted responses remain compatible with the unchanged API and record any environment blocker rather than silently skipping the gate.
+- [x] 5.3 Exercise the real shopping-list page at desktop and narrow mobile widths using browser automation and screenshots; verify keyboard/touch/drag reordering, boundary focus, save/cancel/reopen/reload, rejected and pending saves, offline Save disabling, readable long labels, and no layout overlap.
+- [x] 5.4 Verify cross-consumer shopping regressions with seeded fixture data: copy both formats, add recipe ingredients, add/rename/delete labels, check/uncheck items, reorder items within a section, and refresh after a concurrent label change; confirm saved route stability, preserved quantities/references/item positions, and every unchecked item remaining visible exactly once.
+- [x] 5.5 Update the Shopping Lists section of `docs/docs/documentation/getting-started/features.md` with per-list aisle editing, optional English-name suggestions, manual overrides, save/cancel behavior, and the retained No Label-first convention; verify the documentation matches the delta spec and makes no store-profile or shortest-path claim.
