@@ -1,0 +1,271 @@
+AGENTS.md
+  s_b688b9ea3077a5::t_f0097d908a5abc 1-60
+docs/docs/documentation/getting-started/features.md
+  s_b688b9ea3077a5::t_b2b79f1e9be7bc 1-290
+docs/docs/overrides/api.html
+  s_b688b9ea3077a5::t_715bc6de329b3c 1-24
+frontend/DESIGN.md
+  s_b688b9ea3077a5::t_7b6ad6db8a127a 1-49
+frontend/assets/main.css
+  s_1bd53c1b7d14c0::t_5c99a517d0711d 1-256
+frontend/components/Domain/Cookbook/CookbookPage.vue
+  s_686ac2d56a6ac0::t_5ccb98739cd4f4 1-130
+frontend/components/Domain/Recipe/CookingInsightList.vue
+  s_b688b9ea3077a5::t_d4294a6df93bc3 1-137
+frontend/components/Domain/Recipe/RecipeCardActions.vue
+  s_799e78365ed122::t_ed9b34c7478838 1-152
+frontend/components/Domain/Recipe/RecipeCardRating.vue
+  s_686ac2d56a6ac0::t_243f4036a70fa3 1-102
+frontend/components/Domain/Recipe/RecipeComparisonToolbar.vue
+  s_7b33bf6689a8d4::t_69281f4df2ac47 1-117
+frontend/components/Domain/Recipe/RecipeExplorerPage/RecipeExplorerPage.vue
+  s_b688b9ea3077a5::t_31307bdffefa74 1-307
+frontend/components/Domain/Recipe/RecipeExplorerPage/RecipeExplorerPageParts/RecipeExplorerPageSearch.vue
+  s_686ac2d56a6ac0::t_de772ef65814d8 1-315
+frontend/components/Domain/Recipe/RecipeExplorerPage/RecipeExplorerPageParts/RecipeExplorerPageSearchFilters.vue
+  s_686ac2d56a6ac0::t_0b0827ebe2f99e 1-149
+frontend/components/Domain/Recipe/RecipeLastMade.vue
+  s_b688b9ea3077a5::t_f4da436b207220 1-352
+frontend/components/Domain/Recipe/RecipePage/RecipePage.vue
+  s_686ac2d56a6ac0::t_63ae55b7267f34 1-470
+frontend/components/Domain/Recipe/RecipePage/RecipePageParts/RecipePageInfoCard.vue
+  s_686ac2d56a6ac0::t_41b733e87a70dc 1-143
+frontend/components/Domain/Recipe/RecipePage/RecipePageParts/RecipePageInfoCardImage.vue
+  s_686ac2d56a6ac0::t_a18cceba5458cd 1-61
+frontend/components/Domain/Recipe/RecipePage/RecipePageParts/RecipePageInstructions.vue
+  s_686ac2d56a6ac0::t_e064e1453e2549 1-986
+frontend/components/Domain/Recipe/RecipeSuggestion.vue
+  s_b688b9ea3077a5::t_78f365c2791758 1-124
+frontend/components/Domain/Recipe/RecipeTimeCard.vue
+  s_686ac2d56a6ac0::t_e3a91c96291472 1-100
+frontend/components/Domain/ShoppingList/MultiPurposeLabelSection.vue
+  s_b688b9ea3077a5::t_5dfebad795fd89 1-127
+frontend/components/Domain/ShoppingList/ShoppingListItem.vue
+  s_686ac2d56a6ac0::t_489aad48fecfff 1-357
+frontend/components/Domain/ShoppingList/ShoppingListItemEditor.vue
+  s_686ac2d56a6ac0::t_8344f0ed811dc9 1-296
+frontend/components/Layout/DefaultLayout.vue
+  s_b688b9ea3077a5::t_6c7167a52c5743 1-396
+frontend/components/Layout/LayoutParts/AppSidebar.vue
+  s_b688b9ea3077a5::t_09eaa042c38974 1-445
+frontend/composables/recipes/use-recipe-comparison.test.ts
+  s_b688b9ea3077a5::t_36143ca8704d61 1-384
+frontend/composables/recipes/use-recipe-comparison.ts
+  s_b688b9ea3077a5::t_7c09afaacd31fe 1-376
+frontend/composables/shopping-list-page/sub-composables/use-shopping-list-copy.ts
+  s_1bd53c1b7d14c0::t_654f85eab31aa3 1-51
+frontend/composables/shopping-list-page/sub-composables/use-shopping-list-crud.ts
+  s_b688b9ea3077a5::t_a15f8a31fb4868 1-336
+frontend/composables/shopping-list-page/sub-composables/use-shopping-list-labels.ts
+  s_b688b9ea3077a5::t_68ed806b51c5ec 1-49
+frontend/composables/shopping-list-page/sub-composables/use-shopping-list-sorting.ts
+  s_b688b9ea3077a5::t_4ad5220d6d6bb8 1-157
+frontend/composables/shopping-list-page/use-shopping-list-page.ts
+  s_b688b9ea3077a5::t_b00c6057417965 1-194
+frontend/composables/use-cooking-insights.test.ts
+  s_b688b9ea3077a5::t_b1241bd9e4e759 1-99
+frontend/composables/use-cooking-insights.ts
+  s_b688b9ea3077a5::t_0598ecd883e498 1-91
+frontend/composables/use-group-mealplan.test.ts
+  s_b688b9ea3077a5::t_6bc8b8d82968f7 1-83
+frontend/composables/use-group-mealplan.ts
+  s_b688b9ea3077a5::t_440516f5e9df95 1-127
+frontend/lang/messages/en-US.json
+  s_b688b9ea3077a5::t_8bb67d338dbfcc 1-1562
+frontend/lib/api/types/recipe.ts
+  s_3a19673f52bf05::t_459e526abdcf6b 1-555
+frontend/lib/api/user/group-mealplan.ts
+  s_b688b9ea3077a5::t_930e6050c484df 1-30
+frontend/lib/api/user/users.test.ts
+  s_b688b9ea3077a5::t_7b786f4948e16a 1-10
+frontend/lib/api/user/users.ts
+  s_b688b9ea3077a5::t_f5cd5cd5b46b2b 1-105
+frontend/pages/changelog.vue
+  s_b688b9ea3077a5::t_48bdc6017c8fed 1-76
+frontend/pages/forgot-password.vue
+  s_686ac2d56a6ac0::t_c91baae33c0504 1-171
+frontend/pages/g/[groupSlug]/cookbooks/index.vue
+  s_686ac2d56a6ac0::t_b3f84aa9c8c97b 1-386
+frontend/pages/g/[groupSlug]/r/create.vue
+  s_686ac2d56a6ac0::t_5b84733b871562 1-174
+frontend/pages/g/[groupSlug]/recipes/finder/index.vue
+  s_b688b9ea3077a5::t_9957aea69d0326 1-697
+frontend/pages/g/[groupSlug]/recipes/insights.vue
+  s_b688b9ea3077a5::t_a0698db0be04ad 1-288
+frontend/pages/household/mealplan/planner.vue
+  s_b688b9ea3077a5::t_eb4c3d1f962d9a 1-344
+frontend/pages/household/mealplan/planner/edit.vue
+  s_b688b9ea3077a5::t_5591dd7cdac815 1-887
+frontend/pages/household/mealplan/planner/view.vue
+  s_b688b9ea3077a5::t_d8a233dd2e8e11 1-256
+frontend/pages/login.vue
+  s_686ac2d56a6ac0::t_f0641067681d5a 1-411
+frontend/pages/register/index.vue
+  s_686ac2d56a6ac0::t_b5f0303431993e 1-570
+frontend/pages/reset-password.vue
+  s_686ac2d56a6ac0::t_2bbb9f7d5d631b 1-215
+frontend/pages/shopping-lists/[id].vue
+  s_b688b9ea3077a5::t_491d1797427aef 1-533
+frontend/pages/user/profile/edit.vue
+  s_686ac2d56a6ac0::t_0bc25f9f3e5293 1-372
+frontend/pages/user/profile/index.vue
+  s_686ac2d56a6ac0::t_9f21869745e8ba 1-350
+frontend/plugins/dark-mode.client.test.ts
+  s_686ac2d56a6ac0::t_84cdf40ee60ee2 1-41
+frontend/plugins/theme.ts
+  s_686ac2d56a6ac0::t_7414bb5fb2d6c0 1-104
+frontend/tests/group-only.test.ts
+  s_b688b9ea3077a5::t_19e226e0ed071d 1-24
+mealie/alembic/versions/2026-10-05-12.00.00_f6b2d1c8a903_add_leftover_planning.py
+  s_b688b9ea3077a5::t_0a0ef69d150f1b 1-42
+mealie/alembic/versions/2026-10-05-19.00.00_a83f4c27d901_add_cooking_provenance.py
+  s_b688b9ea3077a5::t_d1d1a96cdaf927 1-21
+mealie/db/models/household/mealplan.py
+  s_b688b9ea3077a5::t_4d1fe622c3f8bb 1-94
+mealie/db/models/recipe/recipe_timeline.py
+  s_b688b9ea3077a5::t_0ab939cd24bb9e 1-53
+mealie/lang/messages/en-US.json
+  s_b688b9ea3077a5::t_4ee4eb873e6117 1-92
+mealie/repos/repository_cooking_history.py
+  s_b688b9ea3077a5::t_01c152241e5e1b 1-114
+mealie/repos/repository_factory.py
+  s_b688b9ea3077a5::t_640a523ef4de69 1-384
+mealie/repos/repository_meals.py
+  s_b688b9ea3077a5::t_79ed69c5ab8601 1-304
+mealie/repos/repository_users.py
+  s_b688b9ea3077a5::t_0690f62afca299 1-122
+mealie/routes/households/controller_mealplan.py
+  s_b688b9ea3077a5::t_94439fce8bee13 1-185
+mealie/routes/recipe/timeline_events.py
+  s_b688b9ea3077a5::t_565217e6a7d7b7 1-173
+mealie/routes/users/__init__.py
+  s_b688b9ea3077a5::t_912b3d7d3b9c5c 1-16
+mealie/routes/users/cooking_insights.py
+  s_b688b9ea3077a5::t_643b0026202305 1-18
+mealie/schema/_mealie/mealie_model.py
+  s_b688b9ea3077a5::t_6946d125ac09c9 1-183
+mealie/schema/meal_plan/__init__.py
+  s_b688b9ea3077a5::t_ea8ad1febacd31 1-37
+mealie/schema/meal_plan/new_meal.py
+  s_b688b9ea3077a5::t_bee1c83834097b 1-117
+mealie/schema/recipe/__init__.py
+  s_b688b9ea3077a5::t_2014a55dedb4e8 1-183
+mealie/schema/recipe/recipe_timeline_events.py
+  s_b688b9ea3077a5::t_cbc312edbad168 1-86
+mealie/schema/user/__init__.py
+  s_b688b9ea3077a5::t_ab51ab6bdd2149 1-94
+mealie/schema/user/cooking_insights.py
+  s_b688b9ea3077a5::t_09ff064a82bb1c 1-95
+mealie/services/recipe/cooking_insights_service.py
+  s_b688b9ea3077a5::t_189a30378c79e0 1-244
+mealie/services/scheduler/tasks/create_timeline_events.py
+  s_b688b9ea3077a5::t_cce7872beca06d 1-135
+openspec/changes/add-recipe-comparison/.openspec.yaml
+  s_7b33bf6689a8d4::t_79b1017ba104f4 1-2
+openspec/changes/add-recipe-comparison/design.md
+  s_799e78365ed122::t_e16c9f98e52da6 1-124
+openspec/changes/cooking-history-insights/.openspec.yaml
+  s_b688b9ea3077a5::t_9a8a8672c99cbe 1-2
+openspec/changes/cooking-history-insights/design.md
+  s_b688b9ea3077a5::t_109f8fa357fdbd 1-160
+openspec/changes/cooking-history-insights/proposal.md
+  s_b688b9ea3077a5::t_df681d89b74138 1-41
+openspec/changes/cooking-history-insights/specs/cooking-history-events/spec.md
+  s_b688b9ea3077a5::t_accc7f5256335b 1-64
+openspec/changes/cooking-history-insights/specs/cooking-history-insights/spec.md
+  s_b688b9ea3077a5::t_93a72121c10a88 1-128
+openspec/changes/cooking-history-insights/tasks.md
+  s_b688b9ea3077a5::t_25303a81b877e0 1-49
+openspec/changes/leftover-aware-planning/.openspec.yaml
+  s_1bd53c1b7d14c0::t_7075dcc716e043 1-2
+openspec/changes/leftover-aware-planning/design.md
+  s_b688b9ea3077a5::t_323ed336dfc5e0 1-156
+openspec/changes/leftover-aware-planning/proposal.md
+  s_b688b9ea3077a5::t_15295c93f92cb4 1-30
+openspec/changes/leftover-aware-planning/specs/leftover-aware-planning/spec.md
+  s_b688b9ea3077a5::t_a182b07ed0bf87 1-180
+openspec/changes/leftover-aware-planning/tasks.md
+  s_b688b9ea3077a5::t_20c3d7013a6908 1-42
+openspec/changes/shopping-route-optimization/.openspec.yaml
+  s_1bd53c1b7d14c0::t_c8ef773fa9a2ca 1-2
+openspec/changes/shopping-route-optimization/design.md
+  s_b688b9ea3077a5::t_18fe802157d743 1-114
+openspec/changes/shopping-route-optimization/proposal.md
+  s_b688b9ea3077a5::t_dda2b42d77e8f5 1-36
+openspec/changes/shopping-route-optimization/specs/shopping-route-ordering/spec.md
+  s_b688b9ea3077a5::t_8992de75d855c1 1-154
+openspec/changes/shopping-route-optimization/tasks.md
+  s_b688b9ea3077a5::t_69000ccf45bfa9 1-33
+tests/integration_tests/user_household_tests/test_group_mealplan.py
+  s_b688b9ea3077a5::t_7aa247abf06f49 1-742
+tests/integration_tests/user_recipe_tests/test_recipe_timeline_events.py
+  s_b688b9ea3077a5::t_d54e28fd071297 1-418
+tests/integration_tests/user_recipe_tests/test_user_cooking_insights.py
+  s_b688b9ea3077a5::t_11c7e1709b5e91 1-267
+tests/unit_tests/schema_tests/test_meal_plan.py
+  s_b688b9ea3077a5::t_946a9e3da9360f 1-73
+tests/unit_tests/services_tests/backup_v2_tests/test_backup_v2.py
+  s_b688b9ea3077a5::t_94112f270d661a 1-302
+tests/unit_tests/services_tests/scheduler/tasks/test_create_timeline_events.py
+  s_b688b9ea3077a5::t_4b8f24f82022a5 1-254
+tests/unit_tests/services_tests/test_cooking_insights.py
+  s_b688b9ea3077a5::t_67559f42d22db6 1-204
+tests/unit_tests/test_alembic.py
+  s_b688b9ea3077a5::t_9a3fe2bfb8fd93 1-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "df3fe6de1317228b15ee9dd260117a96c6921c1d",
+  "prompts": {},
+  "sessions": {
+    "s_1bd53c1b7d14c0": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "07cf1757-4a80-49b7-bdf0-eab92bd54e0e",
+        "model": "copilot/gpt-6.1-sol"
+      },
+      "human_author": "Darren <damcewan@cisco.com>"
+    },
+    "s_3a19673f52bf05": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d8ca4061-e1dc-4d45-ac19-3ec0ded21659",
+        "model": "copilot/gpt-6.1-sol"
+      },
+      "human_author": "Darren <damcewan@cisco.com>"
+    },
+    "s_686ac2d56a6ac0": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "95d26d1c-c129-47e0-b3e1-62ffbd345bb0",
+        "model": "copilot/gpt-6.1-sol"
+      },
+      "human_author": "Darren <damcewan@cisco.com>"
+    },
+    "s_799e78365ed122": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "52cbcf53-1c84-490a-b440-136cc715a115",
+        "model": "copilot/gpt-6.1-sol"
+      },
+      "human_author": "Darren <damcewan@cisco.com>"
+    },
+    "s_7b33bf6689a8d4": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "707b2da0-19ff-484f-ae66-de5e31a3354e",
+        "model": "copilot/gpt-6.1-sol"
+      },
+      "human_author": "Darren <damcewan@cisco.com>"
+    },
+    "s_b688b9ea3077a5": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "bf0df676-c629-4267-8d47-db6a41af989b",
+        "model": "copilot/gpt-6.1-sol"
+      },
+      "human_author": "Darren <damcewan@cisco.com>"
+    }
+  }
+}
